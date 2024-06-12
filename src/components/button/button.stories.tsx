@@ -5,6 +5,16 @@ const meta = {
   title: 'Button',
   component: Button,
   args: { children: 'Button' },
+  argTypes: {
+    disabled: {
+      control: 'boolean',
+    },
+    variant: {
+      control: {
+        type: 'select',
+      },
+    },
+  },
 } satisfies Meta;
 
 export default meta;
@@ -19,5 +29,11 @@ export const Primary: Story = {
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
+  },
+};
+
+export const Destructive: Story = {
+  args: {
+    variant: 'destructive',
   },
 };
