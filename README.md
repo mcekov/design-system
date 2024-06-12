@@ -1,2 +1,3 @@
-# design-system
-Design system with storybook 
+# Design System
+
+Design system with storybook playground
