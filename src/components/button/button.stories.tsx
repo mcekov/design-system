@@ -4,7 +4,7 @@ import { Button } from './button';
 const meta = {
   title: 'Button',
   component: Button,
-  args: { children: 'Button' },
+  args: { children: 'Button', disabled: false, variant: 'primary', size: 'medium' },
   argTypes: {
     disabled: {
       control: 'boolean',
@@ -35,5 +35,17 @@ export const Secondary: Story = {
 export const Destructive: Story = {
   args: {
     variant: 'destructive',
+  },
+};
+
+export const Small: Story = {
+  args: {
+    size: 'small',
+  },
+};
+
+export const Large: Story = {
+  args: {
+    size: 'large',
   },
 };
