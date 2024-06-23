@@ -33,3 +33,9 @@ const meta = {
 
 export default meta;
 type Story = StoryObj<typeof Badge>;
+
+export const Default: Story = {
+  args: {
+    variant: 'primary',
+  },
+};
